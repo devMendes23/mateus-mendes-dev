@@ -1,0 +1,13 @@
+{
+  "name": "mateus-mendes-dev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page e site institucional — Mateus Mendes Desenvolvimento",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  }
+}

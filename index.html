@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mateus Mendes Desenvolvimento — Frontend, Software &amp; Micro-SaaS</title>
+<meta name="description" content="Desenvolvimento de sites, sistemas sob medida e micro-SaaS, com foco em frontend. Projetos reais, código limpo, entrega rápida." />
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<canvas id="bg-grid" aria-hidden="true"></canvas>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header" id="topo">
+  <div class="wrap header-inner">
+    <a href="#topo" class="brand" aria-label="Mateus Mendes Desenvolvimento — início">
+      <img src="assets/logo.svg" alt="" class="brand-mark" width="34" height="34" />
+      <span class="brand-text">
+        <strong>Mateus Mendes</strong>
+        <em>desenvolvimento</em>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#contato" class="nav-cta">Iniciar projeto</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="dot"></span>&lt;disponível_para_novos_projetos /&gt;</p>
+        <h1>
+          Eu transformo ideias de negócio em
+          <span class="hl">software que funciona.</span>
+        </h1>
+        <p class="lead">
+          Desenvolvedor fullstack com foco em <strong>frontend</strong>. Construo sites, sistemas sob medida
+          e <strong>micro-SaaS</strong> para empresas que precisam de algo rápido, bonito e que resolve o problema de verdade —
+          não um template genérico.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">
+            Ver projetos
+          </a>
+          <a href="#contato" class="btn btn-ghost">
+            Falar sobre meu projeto
+          </a>
+        </div>
+        <ul class="hero-stack" aria-label="Principais tecnologias">
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>APIs REST</li>
+          <li>Supabase</li>
+          <li>Vercel</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-reveal data-reveal-delay="1">
+        <div class="editor-window" data-tilt>
+          <div class="editor-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="editor-title">perfil.js</span>
+          </div>
+          <pre class="editor-body"><code><span class="c-key">const</span> <span class="c-var">dev</span> = {
+  <span class="c-prop">nome</span>: <span class="c-str">"Mateus Mendes"</span>,
+  <span class="c-prop">foco</span>: <span class="c-str">"frontend"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"JS"</span>, <span class="c-str">"Node"</span>, <span class="c-str">"React"</span>, <span class="c-str">"Supabase"</span>],
+  <span class="c-prop">constroi</span>: [<span class="c-str">"sites"</span>, <span class="c-str">"sistemas"</span>, <span class="c-str">"micro-SaaS"</span>],
+  <span class="c-prop">disponivel</span>: <span class="c-bool">true</span>
+};
+
+<span class="c-fn">iniciarProjeto</span>(dev)<span class="cursor-blink">|</span></code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section">
+    <div class="wrap">
+      <p class="section-tag" data-reveal>// serviços</p>
+      <h2 data-reveal>O que eu construo</h2>
+      <p class="section-lead" data-reveal>
+        Do primeiro pixel à API que sustenta o sistema. Escolho a stack certa para o problema certo — sem inflar
+        o projeto com tecnologia que você não precisa.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card" data-reveal data-tilt>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>Sites &amp; Landing Pages</h3>
+          <p>Sites institucionais, catálogos e páginas de alta conversão. Rápidos, responsivos e pensados para gerar contato.</p>
+        </article>
+
+        <article class="card" data-reveal data-tilt>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4 3 12l5 8"/><path d="M16 4l5 8-5 8"/></svg>
+          </div>
+          <h3>Frontend sob medida</h3>
+          <p>Interfaces modernas, animadas e performáticas. UI que parece cara sem pesar a experiência do usuário.</p>
+        </article>
+
+        <article class="card" data-reveal data-tilt>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="7" rx="1.5"/><rect x="4" y="13" width="16" height="7" rx="1.5"/><circle cx="8" cy="7.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="8" cy="16.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>Backend &amp; APIs</h3>
+          <p>Autenticação, banco de dados, integrações e regras de negócio. A parte que ninguém vê, mas que sustenta tudo.</p>
+        </article>
+
+        <article class="card" data-reveal data-tilt>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+          </div>
+          <h3>Micro-SaaS</h3>
+          <p>Ferramentas sob demanda — agendamento, automação, painéis internos. Um produto pequeno resolvendo um problema real.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="section section-alt">
+    <div class="wrap">
+      <p class="section-tag" data-reveal>// portfólio</p>
+      <h2 data-reveal>Projetos no ar</h2>
+      <p class="section-lead" data-reveal>
+        Nada de mockup — são projetos reais, em produção, sendo usados por clientes de verdade.
+      </p>
+
+      <div class="portfolio-grid">
+        <article class="project-card" data-reveal data-tilt>
+          <a class="browser-frame" href="https://electrasul-atacadista.com.br" target="_blank" rel="noopener noreferrer" aria-label="Abrir site da Electrasul Atacadista (nova aba)">
+            <div class="browser-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="browser-url">electrasul-atacadista.com.br</span>
+            </div>
+            <div class="browser-preview electrasul-preview">
+              <img src="assets/electrasul-preview.jpg" alt="Prévia do site Electrasul Atacadista" loading="lazy" width="1568" height="561" />
+            </div>
+          </a>
+          <div class="project-info">
+            <h3>Electrasul Atacadista</h3>
+            <p>Site institucional para distribuidora atacadista de materiais elétricos (Canoas/RS) — catálogo de produtos, cobertura por estado e canais de cotação rápida.</p>
+            <ul class="tag-list">
+              <li>Frontend</li>
+              <li>Catálogo</li>
+              <li>Responsivo</li>
+            </ul>
+            <a href="https://electrasul-atacadista.com.br" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visitar site <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-reveal-delay="1" data-tilt>
+          <a class="browser-frame" href="https://duda-margotti-beauty.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir site da Duda Margotti Beauty (nova aba)">
+            <div class="browser-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="browser-url">duda-margotti-beauty.vercel.app</span>
+            </div>
+            <div class="browser-preview duda-preview">
+              <img src="assets/duda-margotti-preview.jpg" alt="Prévia do site Duda Margotti Beauty" loading="lazy" width="1568" height="722" />
+            </div>
+          </a>
+          <div class="project-info">
+            <h3>Duda Margotti Beauty</h3>
+            <p>Site com agendamento online para maquiagem, cabelo, lash design e sobrancelha — cliente escolhe o serviço e o horário direto pelo site, sem ida e volta no WhatsApp.</p>
+            <ul class="tag-list">
+              <li>Next.js</li>
+              <li>Supabase</li>
+              <li>Agendamento</li>
+            </ul>
+            <a href="https://duda-margotti-beauty.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visitar site <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <div class="wrap about-grid">
+      <div data-reveal>
+        <p class="section-tag">// sobre mim</p>
+        <h2>Mateus Mendes</h2>
+        <p class="section-lead">
+          Desenvolvedor fullstack, especializado em frontend. Gosto de pegar um problema real de um negócio real
+          e transformar em uma interface que funciona bem e uma base de código que aguenta crescer — sem gambiarra,
+          sem enrolação.
+        </p>
+        <p>
+          Trabalho do zero ao ar: da primeira conversa sobre o problema até o site ou sistema publicado, com backend,
+          banco de dados e tudo que for preciso pra rodar de verdade.
+        </p>
+      </div>
+
+      <div class="terminal-window" data-reveal data-reveal-delay="1" data-tilt>
+        <div class="editor-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="editor-title">~/mateus-mendes</span>
+        </div>
+        <pre class="editor-body terminal-body"><code
+><span class="t-prompt">$</span> whoami
+dev fullstack — foco em frontend
+
+<span class="t-prompt">$</span> cat stack.txt
+JavaScript · Node.js · React
+APIs REST · Supabase / PostgreSQL
+UI, animação e performance
+
+<span class="t-prompt">$</span> echo $DISPONIBILIDADE
+"aberto pra novos projetos"<span class="cursor-blink">|</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="processo" class="section section-alt">
+    <div class="wrap">
+      <p class="section-tag" data-reveal>// como funciona</p>
+      <h2 data-reveal>Do briefing ao deploy</h2>
+
+      <ol class="process-list">
+        <li data-reveal>
+          <span class="step-num">01</span>
+          <h3>Briefing</h3>
+          <p>Você me conta o problema e o objetivo do projeto. Eu entendo o negócio antes de pensar em código.</p>
+        </li>
+        <li data-reveal data-reveal-delay="1">
+          <span class="step-num">02</span>
+          <h3>Proposta</h3>
+          <p>Escopo, prazo e valor definidos com clareza — sem letra miúda.</p>
+        </li>
+        <li data-reveal data-reveal-delay="2">
+          <span class="step-num">03</span>
+          <h3>Desenvolvimento</h3>
+          <p>Frontend, backend e integrações, com atualizações periódicas do progresso.</p>
+        </li>
+        <li data-reveal data-reveal-delay="3">
+          <span class="step-num">04</span>
+          <h3>Entrega &amp; suporte</h3>
+          <p>Publicação no ar e acompanhamento depois do lançamento.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section contact-section">
+    <div class="wrap contact-grid">
+      <div data-reveal>
+        <p class="section-tag">// contato</p>
+        <h2>Vamos tirar seu projeto do papel?</h2>
+        <p class="section-lead">
+          Me conta o que você precisa — site, sistema ou uma ideia de micro-SaaS — e eu retorno com os próximos passos.
+        </p>
+        <a class="contact-email" href="mailto:desenvolvimentomateusmendes@gmail.com">desenvolvimentomateusmendes@gmail.com</a>
+      </div>
+
+      <form id="contact-form" class="contact-form" data-reveal data-reveal-delay="1" novalidate>
+        <div class="form-row">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" autocomplete="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+        </div>
+        <div class="form-row">
+          <label for="service">Tipo de projeto</label>
+          <select id="service" name="service">
+            <option value="site">Site / Landing page</option>
+            <option value="frontend">Frontend sob medida</option>
+            <option value="backend">Backend / API</option>
+            <option value="saas">Micro-SaaS</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <!-- honeypot anti-spam, mantido escondido para humanos -->
+        <div class="form-row hp-field" aria-hidden="true">
+          <label for="website">Não preencher</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          <span class="btn-label">Enviar mensagem</span>
+        </button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a href="#topo" class="brand brand-small">
+      <img src="assets/logo.svg" alt="" width="24" height="24" />
+      <span>Mateus Mendes Desenvolvimento</span>
+    </a>
+    <p>© <span id="year"></span> Mateus Mendes Desenvolvimento. Feito à mão, sem template.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -229,4 +229,50 @@
       }
     });
   }
+
+  /* -------------------------------------------------------------- */
+  /* Magnetic buttons                                                 */
+  /* -------------------------------------------------------------- */
+  if (!prefersReducedMotion && matchMedia("(hover: hover)").matches) {
+    document.querySelectorAll(".btn, .nav-cta").forEach((el) => {
+      const pull = 0.35;
+      const lift = el.classList.contains("btn") ? -2 : 0;
+
+      el.addEventListener("mousemove", (e) => {
+        const rect = el.getBoundingClientRect();
+        const dx = (e.clientX - rect.left - rect.width / 2) * pull;
+        const dy = (e.clientY - rect.top - rect.height / 2) * pull;
+        el.style.transform = `translate(${dx}px, ${dy + lift}px)`;
+      });
+
+      el.addEventListener("mouseleave", () => {
+        el.style.transform = "translate(0, 0)";
+      });
+    });
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Scrollspy: highlight active nav link                            */
+  /* -------------------------------------------------------------- */
+  const navLinks = document.querySelectorAll('.main-nav a[href^="#"]:not(.nav-cta)');
+  const spySections = Array.from(navLinks)
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+
+  if (navLinks.length && spySections.length && "IntersectionObserver" in window) {
+    const spyObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const link = document.querySelector(`.main-nav a[href="#${entry.target.id}"]`);
+          if (!link) return;
+          if (entry.isIntersecting) {
+            navLinks.forEach((l) => l.classList.remove("active"));
+            link.classList.add("active");
+          }
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+    spySections.forEach((section) => spyObserver.observe(section));
+  }
 })();

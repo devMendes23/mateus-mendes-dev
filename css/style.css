@@ -330,9 +330,34 @@ body::before {
   min-height: calc(100vh - var(--header-h));
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg-type {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.hero-bg-type span {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--accent);
+  opacity: 0.05;
+  letter-spacing: -0.01em;
+}
+.hero-bg-type span:nth-child(even) {
+  color: var(--text);
+  font-weight: 500;
+  opacity: 0.06;
 }
 
 .hero-inner {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 56px;

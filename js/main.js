@@ -108,7 +108,15 @@
       }
     }
 
+    const noHover = !matchMedia("(hover: hover)").matches;
+    let ambientT = Math.random() * 10;
+
     function loop() {
+      if (noHover) {
+        ambientT += 0.008;
+        mouse.x = width / 2 + Math.cos(ambientT) * width * 0.38;
+        mouse.y = height * 0.32 + Math.sin(ambientT * 1.3) * height * 0.22;
+      }
       draw();
       if (!prefersReducedMotion) requestAnimationFrame(loop);
     }

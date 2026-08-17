@@ -855,4 +855,16 @@ body::before {
   .process-list { grid-template-columns: 1fr; }
   .section { padding: 76px 0; }
   .hero { padding: 52px 0 48px; }
+
+  .lead { font-size: 16.5px; }
+  .section-lead { font-size: 16px; }
+  .card p,
+  .project-info p,
+  .about-grid p,
+  .process-list p {
+    font-size: 15.5px;
+    line-height: 1.65;
+  }
+  .card h3 { font-size: 18.5px; }
+  .project-info p { font-size: 16px; }
 }

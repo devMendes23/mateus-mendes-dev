@@ -811,6 +811,18 @@ body::before {
   font-size: 13px;
 }
 
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  transition: color 0.2s var(--ease);
+}
+.footer-social svg { width: 17px; height: 17px; }
+.footer-social:hover { color: var(--accent); }
+
 /* ==========================================================================
    WhatsApp floating button
    ========================================================================== */
